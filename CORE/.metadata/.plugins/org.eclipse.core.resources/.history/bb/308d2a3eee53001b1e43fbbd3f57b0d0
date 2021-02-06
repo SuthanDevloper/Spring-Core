@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+         <bean id ="ac" class ="com.suthan.beans.Account" > 
+           <property name="accNo" value="s111"/> 
+ 		<property name="accName" value="HSBC"/> 
+ 		<property name="accType" value="CURRET"/> 
+ 			<property name="balance" value="10000"/> 
+ 		</bean>
+ 		
+ 		 <bean id ="acc1" class ="com.suthan.beans.Account" > 
+           <property name="accNo" value="s112"/> 
+ 		<property name="accName" value="HSBC"/> 
+ 		<property name="accType" value="CURRET"/> 
+ 			<property name="balance" value="10000"/> 
+ 		</bean>
+ 		
+ 		
+ 		<bean id ="addr" class ="com.suthan.beans.Address"> 
+           <property name="no" value="100"/> 
+ 		<property name="street" value="lonodon road "/> 
+ 		<property name="city" value="mitcham"/> 
+ 			<property name="state" value="surrey"/> 
+ 			<property name="country" value="uk"/> 
+ 		</bean>
+ 		
+ 		
+ 		<bean id ="empBean" class ="com.suthan.beans.Employee" autowire="byName">
+ 		
+ 	  
+            <property name="eid" value="100"/> 
+ 		<property name="ename" value="suthan"/> 
+ 		<property name="esal" value="10000"/> 
+ 		  
+ 		<!--  <property name="addr" ref="addr"/> 
+ 			<property name="acc" ref="acc1"/>  --> 
+ 		
+ 		
+ 		</bean>
+ 		 
+        </beans>

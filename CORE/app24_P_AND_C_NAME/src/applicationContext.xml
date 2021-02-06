@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        
+   <bean id ="account" class ="com.suthan.beans.Account" c:accNo="abc111" c:accName ="HSBC" c:accType="current" c:balance="100000"/>
+   
+   <bean id ="employee" class ="com.suthan.beans.Employee" c:eid="333" c:ename="SUTHAN" c:esal="40000" c:eaddr ="lONDON" c:acc-ref="account"/> 
+   
+<bean id ="course" class ="com.suthan.beans.Course" p:cid="abc111" p:cname ="JAVA" p:ccost="100000"/>
+   
+   <bean id ="student" class ="com.suthan.beans.Student" p:sid="999" p:sname="SUTHAN" p:course-ref="course"/> 
+     </beans>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd"> 
+       
+       <!-- consrtructor --> 
+        <bean id="temAdd" class="com.suthan.beans.Address">
+        	<constructor-arg value="100"/>
+        	<constructor-arg value="link road"/>
+        	<constructor-arg value="mitcham"/>
+        	<constructor-arg value="UK"/>
+        </bean>  
+        
+          <bean id="perAdd" class="com.suthan.beans.Address">
+        	
+        </bean>
+        
+        <!-- property -->
+        <bean id = "stdBean" class="com.suthan.beans.Student">
+			<property name="sid" value=" s111"/>
+			<property name="sname" value="suthan"/>
+			<property name="std_Temp_Add" ref="temAdd"/>
+			<property name="std_Perm_Add" ref="perAdd"/>
+
+			<property name="squal">  <!--list -->
+				<list>
+					<value>	BSC</value>
+					<value>MSc</value>
+					<value>PHD</value>
+				</list>
+			</property>
+
+			<property name="scourses"> <!-- set -->
+				<set>
+					<value>JAVA</value>
+					<value>PYTHON</value>
+					<value>ORACLE</value>
+				</set>
+			</property>
+			
+			<property name="scourse_And_Faculty"> <!-- key and value -->
+				<map>
+					<entry key="java" value="nagoor"/>	
+					<entry key="python" value="durga"/>
+					<entry key="oracle" value="dinesh"/>	
+				</map>
+			</property>
+			
+			<property name="scourse_And_Cost">  <!-- properties -->
+				<props>
+					<prop key="java">£60</prop>
+					<prop key="python">£50</prop>
+					<prop key="oracle">£30</prop>
+				</props>
+			</property>
+
+		</bean>        
+       
+       
+       
+       
+       
+        
+        </beans>

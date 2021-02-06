@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean id="wishBean"  abstract="true"   init-method="init" destroy-method="destroy">
+        <property name="wish_message" value ="hai"/>
+        <property name="name" value ="suthan"/>
+    </bean>
+    
+   <bean id="welcomeBean" class="com.suthan.bean.WelcomeBean" parent="wishBean">
+      <property name="wish_message" value ="heloo from welome"/>
+      </bean>
+    
+  <bean id="helloBean" class="com.suthan.bean.HelloBean" parent="wishBean">
+		<property name="wish_message" value ="hi from hello "/>
+		 </bean>
+    </beans>

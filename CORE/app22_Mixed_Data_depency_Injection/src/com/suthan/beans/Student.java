@@ -1,0 +1,83 @@
+package com.suthan.beans;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
+public class Student {
+
+	private String sid; // primiti
+	private String sname; // string 
+	private Address std_Temp_Add; // user object
+	private Address std_Perm_Add; // user object
+	private List<String> squal;
+	private Set<String> scourses;
+	private Map<String,String> scourse_And_Faculty;
+	private Properties scourse_And_Cost;
+
+	
+	public String getSid() {
+		return sid;
+	}
+	public void setSid(String sid) {
+		this.sid = sid;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public Address getStd_Temp_Add() {
+		return std_Temp_Add;
+	}
+	public void setStd_Temp_Add(Address std_Temp_Add) {
+		this.std_Temp_Add = std_Temp_Add;
+	}
+	public Address getStd_Perm_Add() {
+		return std_Perm_Add;
+	}
+	public void setStd_Perm_Add(Address std_Perm_Add) {
+		this.std_Perm_Add = std_Perm_Add;
+	}
+	public List<String> getSqual() {
+		return squal;
+	}
+	public void setSqual(List<String> squal) {
+		this.squal = squal;
+	}
+	public Set<String> getScourses() {
+		return scourses;
+	}
+	public void setScourses(Set<String> scourses) {
+		this.scourses = scourses;
+	}
+	public Map<String, String> getScourse_And_Faculty() {
+		return scourse_And_Faculty;
+	}
+	public void setScourse_And_Faculty(Map<String, String> scourse_And_Faculty) {
+		this.scourse_And_Faculty = scourse_And_Faculty;
+	}
+	public Properties getScourse_And_Cost() {
+		return scourse_And_Cost;
+	}
+	public void setScourse_And_Cost(Properties scourse_And_Cost) {
+		this.scourse_And_Cost = scourse_And_Cost;
+	}
+	
+	public void getStudentDetails() {
+		System.out.println("STUDENT DETAILS");
+		System.out.println("********************");
+		System.out.println(sid);
+		System.out.println(sname);
+		System.out.println(std_Temp_Add);
+		System.out.println(std_Perm_Add);
+		System.out.println(squal);
+		System.out.println(scourses);
+		System.out.println(scourse_And_Faculty);
+		System.out.println(scourse_And_Cost);
+	}
+	
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cm.suthan.test&apos; to &apos;com.suthan.test&apos;&#x0D;&#x0A;- Original project: &apos;app26_Annatation_Autowire&apos;&#x0D;&#x0A;- Original element: &apos;app26_Annatation_Autowire/src/cm.suthan.test&apos;&#x0D;&#x0A;- Renamed element: &apos;app26_Annatation_Autowire/src/com.suthan.test&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cm.suthan.test&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;cm.suthan.test" name="com.suthan.test" qualified="false" references="true" stamp="1556964336364" textual="false" version="1.0"/>
+</session>

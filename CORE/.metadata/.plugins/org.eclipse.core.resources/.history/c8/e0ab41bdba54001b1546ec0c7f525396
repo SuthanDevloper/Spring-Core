@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    
+    
+    <bean id ="spring" class="com.suthan.bean.Course">
+    	<property name="cid" value="S-111"/>
+    	<property name="cname" value="spring"/>
+    	<property name="ccost" value="5000"/>
+    </bean>
+    
+    
+    <bean id ="stdBean" class="com.suthan.bean.Student" autowire="byType">
+    	<property name="sid" value="S-112"/>
+    	<property name="sname" value="suthan"/>
+    	<property name="saddr" value="london"/>
+    	
+    </bean>
+    
+    </beans>

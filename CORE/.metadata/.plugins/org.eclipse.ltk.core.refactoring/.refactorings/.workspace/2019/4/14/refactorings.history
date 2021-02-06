@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;app14_priority&apos; to &apos;app14_priority_of _Bean_Ini&apos;&#x0D;&#x0A;- Original element: &apos;app14_priority&apos;&#x0D;&#x0A;- Renamed element: &apos;app14_priority&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;app14_priority&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=app14_priority" name="app14_priority_of _Bean_Ini" references="true" stamp="1554316689975" version="1.0"/>
+</session>

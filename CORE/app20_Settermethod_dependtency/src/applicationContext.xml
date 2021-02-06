@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       
+       <bean id ="empbean" class="com.suthan.bean.EmployeeService" init-method="init">
+       		
+        	<property name="driver_Class" value="oracle.jdbc.OracleDriver"/>
+        	<property name="driver_URL" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+        	<property name="db_User_Name" value="system"/>
+        	<property name="db_Pwd" value="suthan"/>
+        </bean>
+    </beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+      <bean id ="hellobean" name ="helloBean1" class="com.dss.bean.HelloBean">  
+       <!--     <bean name="helloBean1,helloBean2" class="com.dss.bean.HelloBean"> -->
+       
+        <property name="name" value="suthan"/>
+       </bean>
+         <alias name="helloBean1" alias="helloBean2"/> 
+         <alias name="helloBean1" alias="helloBean3"/> 
+      </beans>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;app21&apos; to &apos;app21_constructor_vs_settermethod&apos;&#x0D;&#x0A;- Original element: &apos;app21&apos;&#x0D;&#x0A;- Renamed element: &apos;app21&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;app21&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=app21" name="app21_constructor_vs_settermethod" references="true" stamp="1555009360012" version="1.0"/>
+</session>
